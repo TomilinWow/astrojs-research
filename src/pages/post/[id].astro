@@ -16,13 +16,13 @@ interface Props {
 const { post } = Astro.props
 ---
 
-<Layout title="photo">
+<Layout title="post">
   <div class="flex h-max w-full flex-col gap-20 p-4 bg-blue-200 m-4">
     <div class="flex justify-center mt-4">
       <span class="rounded-md p-1 font-bold text-gray-900">{post.title}</span>
     </div>
     <div class="flex justify-center">
-      <p class="rounded-md w-100 font-semibold text-gray-900">{post.body}</p>
+      <p class="rounded-md w-100 font-semibold text-gray-900" id="post-body">{post.body}</p>
     </div>
   </div>
 </Layout>
